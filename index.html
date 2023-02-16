@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #navbar::before {
+        content: "";
+        background: url("woman-g6d47161fc_1920.jpg");
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        width: 100%;
+        opacity: 0.6;
+      }
+      #navbar {
+        display: flex;
+        /* border: 2px solid grey; */
+        position: relative;
+      }
+      .logo {
+        filter: invert(100%);
+        height: 51px;
+        padding: 12px;
+        margin-left: 23px;
+        margin-top: -7px;
+      }
+
+      #navCenter {
+        display: flex;
+        position: absolute;
+        left: 296px;
+      }
+      .listItem {
+        list-style: none;
+        height: 10px;
+        padding: 12px;
+        margin-left: 35px;
+        margin-top: 10px;
+      }
+      .listItem a {
+        font-weight: 50;
+        font-family: "Aclonica", sans-serif;
+        padding: 8px;
+        border-radius: 4px;
+        color: white;
+      }
+
+      .listItem a:hover {
+        background-color: rgb(168, 164, 157);
+        color: black;
+      }
+      .search {
+        display: flex;
+        position: absolute;
+        left: 67rem;
+        top: 5px;
+        padding: 11px;
+      }
+      .search input {
+        padding: 6px;
+        border-radius: 7px;
+        font-family: "Aclonica", sans-serif;
+      }
+      .search input:hover {
+        color: rgb(12, 12, 12);
+        background-color:  rgb(168, 164, 157);
+      }
+
+      #overview {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 55px;
+      }
+
+      #main {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 143px;
+        left: 870px;
+        justify-content: center;
+        align-items: center;
+      }
+      #form {
+        /* margin-top: px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #f1 {
+        margin-top: 25px;
+        display: none;
+        text-shadow: 3px -2px 0px black;
+      }
+      #form input {
+        margin: 7px;
+        padding: 12px;
+        /* border: 1px solid green; */
+        text-align: center;
+        font-family: "Aclonica", sans-serif;
+        border-radius: 8px;
+      }
+
+      #form input:hover {
+        background-color: blanchedalmond;
+        color: rgb(24, 24, 58);
+      }
+
+      .heading {
+        /* border: 2px solid black; */
+        text-align: center;
+        padding: 30px;
+        text-decoration: underline;
+        font-family: "Kanit", sans-serif;
+        letter-spacing: 3px;
+        color: white;
+      }
+
+      .h33 {
+        /* border: 2px solid black; */
+        text-align: center;
+        padding: 30px;
+        text-decoration: underline;
+        font-family: "Kanit", sans-serif;
+        letter-spacing: 3px;
+        font-weight: 500;
+      }
+      #bt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        margin-left: 100px;
+        height: 20px;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 7px;
+        color :rgb(20, 23, 26) ; 
+        background: rgb(34, 31, 31);
+      }
+      #bt:hover {
+        background-color: black;
+        color: beige;
+      }
+      .for{
+        color :rgb(34, 31, 31) ; 
+        text-shadow: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img
+          class="logo"
+          src="png-transparent-dumbbell-computer-icons-weight-training-dumbbell-angle-physical-fitness-text-thumbnail.png"
+          alt=""
+        />
+      </div>
+      <ul id="navCenter">
+        <li class="listItem"><a href="#"> Home </a></li>
+        <li class="listItem"><a href="#"> Services </a></li>
+        <li class="listItem"><a href="#"> Contact Us </a></li>
+        <li class="listItem"><a href="#"> About Us </a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="Search here" />
+      </div>
+    </nav>
+
+    <div id="overview">
+      <h2 class="heading">OVERVIEW</h2>
+      <div id="vid">
+        <video src="overview.mp4" controls></video>
+      </div>
+    </div>
+
+    <div id="main">
+      <button id="bt" onclick="form1()">
+        <h4 class="heading">Want To Join</h4>
+      </button>
+      <div id="f1">
+        <h2 class="heading" class ="for" >Fill THE FORM TO JOIN</h2>
+
+        <form action="" id="form">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="text" placeholder="Email Address" />
+          <input type="text" placeholder="Contact No." />
+
+          <div class="submit">
+            <input type="submit" placeholder="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="services">
+      <h2 class="heading">
+
+      </h2>
+      <div class="serCon">
+
+        <div class="con"> 
+          <img src="" alt="" class="serImg">
+            Cardio
+         </div>
+        <div class="con"> 
+          <img src="" alt="" class="serImg"> 
+            Marshelarts    
+        </div>
+        </div>
+        <div class="con">
+          <img src="" alt="" class="serImg"> 
+          zudo
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <script>
+      function form1() {
+        let f1 = document.getElementById("f1");
+        f1.style.display = "block";
+        let f2 = document.getElementById("bt");
+        f2.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
